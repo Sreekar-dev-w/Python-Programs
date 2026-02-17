@@ -17,6 +17,6 @@ else:
             special = True
 
     if upper and lower and digit and special:
-        print("Strong Password 💪")
+        print("Strong Password ")
     else:
-        print("Medium Password ⚠️")
+        print("Medium Password - Add uppercase, lowercase, digit and special char")

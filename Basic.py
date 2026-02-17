@@ -9,6 +9,6 @@ gender = "Boy"
 
 print("Hello")
 print("My name is", name)
-print("I am", age, "years old")
-print("I am", height, "feet tall")
+print("I am, {}, years old".format(age))
+print("I am, {} feet tall".format(height))
 print("I am a", gender)

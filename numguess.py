@@ -1,9 +1,9 @@
 import random 
-number=random.randint(1, 50)
+number=random.randint(1, 500)
 attempts=0
 
 while True:
-    guess=int(input("Guess the number between 1 to 50 : "))
+    guess=int(input("Guess the number between 1 to 500 : "))
     attempts+=1
     
     if guess<number:
@@ -15,6 +15,6 @@ while True:
     else:
         print("Correct")
     
-    print("Attempts : ")
+    print("Attempts : ",attempts)
     
     break        
