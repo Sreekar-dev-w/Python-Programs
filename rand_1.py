@@ -1,3 +1,4 @@
+
 stock=int(input("Enter a number: "))
 
 if stock%2==0:
@@ -40,4 +41,62 @@ if supercharged==stock:
     print("Armstrong")
 else:
     print("Not Armstrong")
+
+list=[]
+for i in range(5):
+    num=int(input("Enter a number: "))
+    list.append(num)
+
+pc=0
+
+def calc(stock):
+    
+
+    if stock%2==0:
+        print("Even")
+    else:
+        print("Odd")
+        
+    if stock <= 1:
+        print("Not Prime")
+    else:
+        is_prime = True
+        for i in range(2, int(stock**0.5) + 1):
+            if stock % i == 0:
+                is_prime = False
+                break
+
+        if is_prime:
+            print("Prime")
+            pc+=1
+        else:
+            print("Not Prime")
+
+            
+            
+    if str(stock )== str(stock)[::-1]:
+        print("Palindrome")
+        pc+=1
+    else:
+        print("Not Palindrome")
+        
+    turbo=stock
+    diecast = len(str(stock))
+    supercharged=0
+
+    while turbo>0:
+        diesel=turbo%10
+        supercharged+=diesel**diecast
+        turbo//=10
+        
+    if supercharged==stock:
+        print("Armstrong")
+    else:
+        print("Not Armstrong")
+        
+for i in list:   
+    calc(i)
+print(list)
+print(pc)
+
     
